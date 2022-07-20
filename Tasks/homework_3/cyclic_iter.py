@@ -1,17 +1,23 @@
+test_list = [0, 1, 2, 3]
+
+
 class CyclicIterator:
     """ Infinite cyclic iterator
     """
+    def __init__(self, value):
+        self.value = value
+        self.iterator = iter(value)
+
     def __iter__(self):
         return self
 
     def __next__(self):
         try:
-            return self
+            return next(self.iterator)
         except StopIteration:
-            return self
+            self.iterator = iter(self.value)
+            return next(self.iterator)
 
 
-a = [0, 1, 2, 3]
-
-itr = CyclicIterator()
-print(itr)
+for x in CyclicIterator(test_list):
+    print(x)
