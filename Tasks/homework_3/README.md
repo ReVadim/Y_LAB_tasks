@@ -93,3 +93,6 @@ class Movie:
     def schedule(self) -> Generator[datetime, None, None]:
         return []
 ```
+
+Результат работы:    
+![](https://github.com/ReVadim/Y_LAB_tasks/blob/main/printscreen/test_homework_3.png)
