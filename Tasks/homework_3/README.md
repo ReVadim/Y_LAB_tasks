@@ -44,6 +44,8 @@ t = border_sleep_time if t >= border_sleep_time
 Сделать рефакторинг кода согласно принципам SOLID.    
 [Ссылка на код](https://github.com/BernarBerdikul/ylab_hw/tree/main/not_solid_code)
 
+Результат выполнения:    
+![](https://github.com/ReVadim/Y_LAB_tasks/blob/main/printscreen/refactor_result.png)
 <hr>    
 
 ## Homework 3. part 2    
